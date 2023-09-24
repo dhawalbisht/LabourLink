@@ -1,0 +1,36 @@
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	background: #000;
+	color: #fefefe;
+	height: 400px;
+
+}
+
+
+.chatbot{
+	margin-top: 100px;
+	margin-right: none;
+}
+.column1{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.column2{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.column3{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
