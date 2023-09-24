@@ -1,3 +1,278 @@
 /* h1{
     text-align: left;
 } */
+/* Believe and Build the link! */
+.block1 {
+    margin: 0;
+  }
+  .block1 {
+    background: #f1c40f;;
+    height: 10vh;
+    width: 100%;
+    animation: fade 5s infinite;
+    animation-direction: alternate;
+  }
+  .row-1 {
+  }
+  .row-2 {
+    animation-delay:0.5s;
+  }
+  .row-3 {
+    animation-delay:1s;
+  }
+  .row-4 {
+    animation-delay:1.5s;
+  }
+  .row-5 {
+    animation-delay:2s;
+  }
+  .row-6 {
+    animation-delay:2.5s;
+  }
+  .row-7 {
+    animation-delay:3s;
+  }
+  .row-8 {
+    animation-delay:3.5s;
+  }
+  
+  .row-9 {
+    animation-delay:4s;
+  }
+  .row-10 {
+    animation-delay:4.5s;
+  }
+  
+  
+  
+  @keyframes fade {
+    from { background: #f1c40f; }
+    to { background: #d35400; }
+  }
+.block1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 980px;
+    color: #D9D9D9;
+}
+.text1{
+display:flex;
+text-align: center;
+margin-top: 100px;
+margin-left: 10%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900px;
+font-size: 48px;
+line-height: 59px;
+color: #000000;
+margin-right: 10%;
+
+}
+.text2{
+    /* "Building a bridge between job seekers and employers in the labour market." */
+display: flex;
+justify-self: unset;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+margin-left: 2%;
+color: #000000;
+
+
+}
+.right-image1{
+
+display:flex;
+justify-content: center;
+margin-top: 5%;
+margin-right: 5%;
+justify-content: space-between;
+flex-direction: row;
+
+}
+.button-1{
+    /* Rectangle 2 */
+    text-decoration: none;
+    text-align: center;
+cursor: pointer;
+/* position: relative; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: 100%;
+margin-top: 350px;
+margin-left: -180%;
+width: 354px;
+height: 68px;
+left: 239px;
+top: 16px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+background: linear-gradient(180deg, #FFC815 81.25%, #E2AF07 100%, #FFC815 100%);
+border-radius: 30px;
+
+}
+.button-1:hover{
+    background: aqua;
+}
+
+/* Rectangle 8 */
+.Rectangle8{
+display:flex;
+flex-direction: row;
+background-repeat: no-repeat;
+background-image: url('./assets/labor.png');
+/* margin-top: 5%; */
+background-repeat: round;
+min-height: 850px;
+}
+.text-3{
+    /* Our Aim */
+display: flexbox;
+width: 570px;
+height: 100px;
+left: 89px;
+top: 776px;
+margin-top: 10px;
+margin-left: 80px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+color: #faf8f8;
+
+
+}
+.text-4{
+    /* The website aims to bridge the gap between job seekers and employers by providing a centralized platform where they can connect and fulfill their respective needs. */
+display: flex;
+flex-direction: row;
+margin-top: 120px;
+margin-left: -600px;
+content: normal;
+width: 714px;
+height: 98px;
+left: 29px;
+top: 700px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+
+color: #f8f2f2;
+
+
+}
+.image2{
+    display: flexbox;
+    justify-items: flex-end;
+    flex-direction: column;
+    box-shadow: #000000;
+    margin-left: 28%;
+    border-radius: 30px;
+}
+
+.text5{
+    /* Ratings and Reviews */
+
+display: flex;
+flex-wrap: wrap;
+margin-left: 40%;
+width: 610px;
+height: 90px;
+left: 427px;
+top: 1503px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+.block3{
+    height: max-content;
+    min-height: 400px;
+    background:#D9D9D9;
+    display: flex;
+}
+}
+.ratingblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.eclipse1{
+    /* Ellipse 1 */
+
+display: flex;
+position: relative;
+flex-direction: column;
+width: 210px;
+height: 213px;
+border-radius: 50%;
+background: #D9D9D9;
+
+}
+.eclipse2{
+    /* Ellipse 2 */
+display: flex;
+flex-direction: row;
+
+width: 210px;
+height: 213px;
+left: 341px;
+top: 1637px;
+border-radius: 50%;
+background: #D9D9D9;
+
+}
+.eclipse3{
+    /* Ellipse 3 */
+
+border-radius: 50%;
+width: 210px;
+height: 213px;
+left: 623px;
+top: 1638px;
+
+background: #D9D9D9;
+
+}
+.eclipse4{
+    /* Ellipse 4 */
+
+border-radius: 50%;
+width: 210px;
+height: 213px;
+left: 909px;
+top: 1636px;
+
+background: #D9D9D9;
+
+}
+.eclipse5{
+    /* Ellipse 5 */
+
+border-radius: 50%;
+width: 210px;
+height: 213px;
+left: 1191px;
+top: 1636px;
+
+background: #D9D9D9;
+
+}
