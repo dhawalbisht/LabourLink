@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import '../style/HomePage.css'
 import { Link } from '@mui/material'
-
+import Write from '../components/Typewrite'
 
 export default function HomePage() {
     
@@ -22,9 +22,10 @@ export default function HomePage() {
             <div class="row-9 row"></div>
             <div class="row-10 row"></div>
             <div className="Rectangle1">
-                <h1 className='text1'>Believe and Build the link!</h1>
+                
+                <h1 className='text1'><Write/></h1>
                 <p className='text2'>"Building a bridge between job seekers and employers in the labour market."</p></div>
-                <div><button className='button-1'><Link src="LoginPage">Register for Work!</Link></button></div>
+                <div><button className='button-1'><Link src="LoginPage" className='register'>Register for Work!</Link></button></div>
                 <div className="right-image1" ><img height="500px" width='700px' src='./assets/male-worker-factory.jpg'></img></div></div>
                 <div className='Rectangle8'>
                    

@@ -6,14 +6,13 @@
     margin: 0;
   }
   .block1 {
-    background: #f1c40f;;
+    background: #FFC815;;
     height: 10vh;
     width: 100%;
     animation: fade 5s infinite;
     animation-direction: alternate;
   }
-  .row-1 {
-  }
+
   .row-2 {
     animation-delay:0.5s;
   }
@@ -46,8 +45,8 @@
   
   
   @keyframes fade {
-    from { background: #f1c40f; }
-    to { background: #d35400; }
+    from { background: #f0ce5d; }
+    to { background: #e6e6e6; }
   }
 .block1{
     display: flex;
@@ -70,6 +69,7 @@ color: #000000;
 margin-right: 10%;
 
 }
+
 .text2{
     /* "Building a bridge between job seekers and employers in the labour market." */
 display: flex;
@@ -95,6 +95,9 @@ justify-content: space-between;
 flex-direction: row;
 
 }
+.right-image1:hover{
+              
+}   
 .button-1{
     /* Rectangle 2 */
     text-decoration: none;
@@ -105,17 +108,21 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 margin-right: 100%;
-margin-top: 350px;
+margin-top: 450px;
 margin-left: -180%;
 width: 354px;
 height: 68px;
 left: 239px;
-top: 16px;
+top: 25px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 30px;
 background: linear-gradient(180deg, #FFC815 81.25%, #E2AF07 100%, #FFC815 100%);
 border-radius: 30px;
 
+}
+.register{
+  text-align: center;
+  margin-left:10px ;
 }
 .button-1:hover{
     background: aqua;

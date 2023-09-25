@@ -8,9 +8,9 @@ return (
     <div className="footer" >
         <div className="chatbot">
             <h4 className="ftext1">LinkBot/Help</h4>
-            <search className="searchbar"></search>
+                <input type="text" className="searchbar" placeholder="Ask your doubts!"></input>
 
-            <img src="./assets/bot.png" height='50px'></img>
+            <img src="./assets/bot.png" height='50px' width='60px'></img>
         
         </div>
         <div className="column1">
@@ -33,7 +33,10 @@ return (
             <div>Privacy</div>
             <div>Terms</div>
         </div>
-		<div><p>@copyright</p></div>
+        <div className="column4">
+            <img src="./assets/instagram.png" alt="" height='40px' /><img src="./assets/call.png" height='40px' alt="" /><img src="./assets/gmail.png" height='40px' alt="" />
+        </div>
+		<div className="lastBar"><p>@copyright</p></div>
     </div>
     </>
 );
