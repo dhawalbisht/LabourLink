@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
-// import Homepage from '../Pages/HomePage'
-import FindWork from '../Pages/FindWork';
+import HomePage from '../Pages/HomePage'
+// import FindWork from '../Pages/FindWork';
 // import firebase from '../firebase';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -19,7 +19,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Phone } from '@mui/icons-material';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GoogleLogin } from '@react-oauth/google';
-import HomePage from '../Pages/HomePage';
+// import HomePage from '../Pages/HomePage';
 
 
 
@@ -40,8 +40,8 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function SignInSide() {
-    const [isLogin, setIsLogin] = useState(false);
+export default function SignInSide({ isLogin, setIsLogin }) {
+    // const [isLogin, setIsLogin] = useState(false);
     // const [label, setLabel] = useState('Phone number')
     const handleSubmit = (event) => {
         const data = new FormData(event.currentTarget);
@@ -51,7 +51,7 @@ export default function SignInSide() {
 
     return (
         <>
-            {isLogin ? (<FindWork />) : (<ThemeProvider theme={defaultTheme}>
+            {isLogin ? (<HomePage isLogin={isLogin} setIsLogin={setIsLogin} />) : (<ThemeProvider theme={defaultTheme}>
                 <Grid container component="main" sx={{ height: '100vh' }}>
                     {/* Add the caption container on the left */}
                     <Grid item xs={12} sm={4} md={7}>
@@ -108,11 +108,13 @@ export default function SignInSide() {
                 label="Remember me"
               /> */}
 
-                                <GoogleOAuthProvider clientId="638206390343-iutkrhrn1naj02aq55i04v5msvv04n3m.apps.googleusercontent.com">
+                                <GoogleOAuthProvider clientId="636840103586-f83i98etc6estra6i3g728lf0u7vnhu2.apps.googleusercontent.com">
                                     <GoogleLogin
                                         onSuccess={credentialResponse => {
+                                            console.log(credentialResponse.credential)
                                             if (credentialResponse.credential) {
                                                 setIsLogin(true)
+                                                console.log("hello")
                                             }
                                         }}
                                         onError={() => {
