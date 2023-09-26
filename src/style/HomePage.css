@@ -3,57 +3,57 @@
 } */
 /* Believe and Build the link! */
 .block1 {
-    margin: 0;
-  }
-  .block1 {
-    background: #FFC815;;
-    height: 10vh;
-    width: 100%;
-    animation: fade 5s infinite;
-    animation-direction: alternate;
-  }
+  margin: 0;
+}
+.block1 {
+  background: #FFC815;;
+  height: 10vh;
+  width: 100%;
+  animation: fade 5s infinite;
+  animation-direction: alternate;
+}
 
-  .row-2 {
-    animation-delay:0.5s;
-  }
-  .row-3 {
-    animation-delay:1s;
-  }
-  .row-4 {
-    animation-delay:1.5s;
-  }
-  .row-5 {
-    animation-delay:2s;
-  }
-  .row-6 {
-    animation-delay:2.5s;
-  }
-  .row-7 {
-    animation-delay:3s;
-  }
-  .row-8 {
-    animation-delay:3.5s;
-  }
-  
-  .row-9 {
-    animation-delay:4s;
-  }
-  .row-10 {
-    animation-delay:4.5s;
-  }
-  
-  
-  
-  @keyframes fade {
-    from { background: #f0ce5d; }
-    to { background: #e6e6e6; }
-  }
+.row-2 {
+  animation-delay:0.5s;
+}
+.row-3 {
+  animation-delay:1s;
+}
+.row-4 {
+  animation-delay:1.5s;
+}
+.row-5 {
+  animation-delay:2s;
+}
+.row-6 {
+  animation-delay:2.5s;
+}
+.row-7 {
+  animation-delay:3s;
+}
+.row-8 {
+  animation-delay:3.5s;
+}
+
+.row-9 {
+  animation-delay:4s;
+}
+.row-10 {
+  animation-delay:4.5s;
+}
+
+
+
+@keyframes fade {
+  from { background: #f0ce5d; }
+  to { background: #e6e6e6; }
+}
 .block1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 980px;
-    color: #D9D9D9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 980px;
+  color: #D9D9D9;
 }
 .text1{
 display:flex;
@@ -71,7 +71,7 @@ margin-right: 10%;
 }
 
 .text2{
-    /* "Building a bridge between job seekers and employers in the labour market." */
+  /* "Building a bridge between job seekers and employers in the labour market." */
 display: flex;
 justify-self: unset;
 font-family: 'Montserrat';
@@ -95,13 +95,13 @@ justify-content: space-between;
 flex-direction: row;
 
 }
-.right-image1:hover{
-              
-}   
+/* .right-image1:hover{
+
+}    */
 .button-1{
-    /* Rectangle 2 */
-    text-decoration: none;
-    text-align: center;
+  /* Rectangle 2 */
+  text-decoration: none;
+  text-align: center;
 cursor: pointer;
 /* position: relative; */
 display: flex;
@@ -121,11 +121,11 @@ border-radius: 30px;
 
 }
 .register{
-  text-align: center;
-  margin-left:10px ;
+text-align: center;
+margin-left:10px ;
 }
 .button-1:hover{
-    background: aqua;
+  background: aqua;
 }
 
 /* Rectangle 8 */
@@ -133,42 +133,41 @@ border-radius: 30px;
 display:flex;
 flex-direction: row;
 background-repeat: no-repeat;
-background-image: url('./assets/labor.png');
+/* background-image: url('./assets/labor.png'); */
 /* margin-top: 5%; */
-background-repeat: round;
-min-height: 850px;
+background-repeat: repeat;
+min-height: 600px;
+width: fit-content;
+/* margin-right: 50px; */
+}
+.textblock{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+margin-left: -96%;
+/* margin-right: 100%;
+ */
+margin-top: 20px;
+text-align: center;
+justify-self: start;
 }
 .text-3{
-    /* Our Aim */
-display: flexbox;
-width: 570px;
-height: 100px;
-left: 89px;
-top: 776px;
-margin-top: 10px;
-margin-left: 80px;
+  /* Our Aim */
+
+
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 800;
 font-size: 48px;
 line-height: 59px;
 text-align: center;
-color: #faf8f8;
+color: #b81c1c;
 
 
 }
 .text-4{
-    /* The website aims to bridge the gap between job seekers and employers by providing a centralized platform where they can connect and fulfill their respective needs. */
-display: flex;
-flex-direction: row;
-margin-top: 120px;
-margin-left: -600px;
+  /* The website aims to bridge the gap between job seekers and employers by providing a centralized platform where they can connect and fulfill their respective needs. */
 content: normal;
-width: 714px;
-height: 98px;
-left: 29px;
-top: 700px;
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -181,16 +180,16 @@ color: #f8f2f2;
 
 }
 .image2{
-    display: flexbox;
-    justify-items: flex-end;
-    flex-direction: column;
-    box-shadow: #000000;
-    margin-left: 28%;
-    border-radius: 30px;
+  display: flexbox;
+  justify-items: flex-end;
+  flex-direction: column;
+  box-shadow: #000000;
+  margin-left: 28%;
+  border-radius: 30px;
 }
 
 .text5{
-    /* Ratings and Reviews */
+  /* Ratings and Reviews */
 
 display: flex;
 flex-wrap: wrap;
@@ -199,7 +198,7 @@ width: 610px;
 height: 90px;
 left: 427px;
 top: 1503px;
-
+margin-top: 50px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -211,19 +210,25 @@ text-decoration-line: underline;
 color: #000000;
 
 .block3{
-    height: max-content;
-    min-height: 400px;
-    background:#D9D9D9;
-    display: flex;
+  height: max-content;
+  min-height: 400px;
+  background:#D9D9D9;
+  display: flex;
+ border: #000000;
+}
+.border1{
+border: #000000;
+border-width: 3px;
+border-style: double;
 }
 }
 .ratingblock{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .eclipse1{
-    /* Ellipse 1 */
+  /* Ellipse 1 */
 
 display: flex;
 position: relative;
@@ -235,7 +240,7 @@ background: #D9D9D9;
 
 }
 .eclipse2{
-    /* Ellipse 2 */
+  /* Ellipse 2 */
 display: flex;
 flex-direction: row;
 
@@ -248,7 +253,7 @@ background: #D9D9D9;
 
 }
 .eclipse3{
-    /* Ellipse 3 */
+  /* Ellipse 3 */
 
 border-radius: 50%;
 width: 210px;
@@ -260,7 +265,7 @@ background: #D9D9D9;
 
 }
 .eclipse4{
-    /* Ellipse 4 */
+  /* Ellipse 4 */
 
 border-radius: 50%;
 width: 210px;
@@ -272,7 +277,7 @@ background: #D9D9D9;
 
 }
 .eclipse5{
-    /* Ellipse 5 */
+  /* Ellipse 5 */
 
 border-radius: 50%;
 width: 210px;
@@ -281,5 +286,22 @@ left: 1191px;
 top: 1636px;
 
 background: #D9D9D9;
+
+}
+.rating{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-left: 30px;
+}
+.review{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-left: 75px;
+margin-top: -25px;
+font-size: large;
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
