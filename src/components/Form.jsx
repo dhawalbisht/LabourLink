@@ -108,7 +108,7 @@ export default function SignInSide({ isLogin, setIsLogin }) {
                 label="Remember me"
               /> */}
 
-                                <GoogleOAuthProvider clientId="26528891117-68otlvtsc8ghbuk45k839ch0m2umth02.apps.googleusercontent.com">
+                                <GoogleOAuthProvider clientId="638206390343-iutkrhrn1naj02aq55i04v5msvv04n3m.apps.googleusercontent.com">
                                     <GoogleLogin
                                         onSuccess={credentialResponse => {
                                             console.log(credentialResponse.credential)

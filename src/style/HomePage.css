@@ -106,13 +106,13 @@ cursor: pointer;
 /* position: relative; */
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: center ;
 margin-right: 100%;
 margin-top: 450px;
-margin-left: -180%;
+margin-left: -130%;
 width: 354px;
 height: 68px;
-left: 239px;
+left: 230px;
 top: 25px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 30px;
@@ -125,7 +125,7 @@ text-align: center;
 margin-left:10px ;
 }
 .button-1:hover{
-  background: aqua;
+  background: rgb(255, 255, 255);
 }
 
 /* Rectangle 8 */

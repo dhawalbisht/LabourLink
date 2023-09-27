@@ -32,10 +32,10 @@ export default function HomePage() {
           </p>
         </div>
         <div>
-          <button className="button-1">
-            <Link src="LoginPage" className="register">
-              Register for Work!
-            </Link>
+          <button className="button-1 text-danger">Register for Work!
+            {/* <Link src="LoginPage" className="register">
+              
+            </Link> */}
           </button>
         </div>
         <div className="right-image1">
@@ -49,12 +49,12 @@ export default function HomePage() {
       <div className="Rectangle8">
         <video src='./assets/video.mp4' autoPlay loop muted width='100%' height='100%' repeat></video>
         <div className="textblock">
-        <h2 className="text-3">Our Aim</h2>
-        <p className="text-4">
-          The website aims to bridge the gap between job seekers and employers
-          by providing a centralized platform where they can connect and fulfill
-          their respective needs.
-        </p></div>
+          <h2 className="text-3">Our Aim</h2>
+          <p className="text-4">
+            The website aims to bridge the gap between job seekers and employers
+            by providing a centralized platform where they can connect and fulfill
+            their respective needs.
+          </p></div>
       </div>
 
       <div className="block3">
@@ -69,14 +69,14 @@ export default function HomePage() {
                 <img className="eclipse2" src="./assets/pic2.jpg"></img>
               </div>
               <div className="eclipse3">
-              <img className="eclipse3" src="./assets/pic3.jpg"></img>
+                <img className="eclipse3" src="./assets/pic3.jpg"></img>
               </div>
               <div className="eclipse4">
-              <img className="eclipse4" src="./assets/pic4.jpg"></img>
+                <img className="eclipse4" src="./assets/pic4.jpg"></img>
               </div>
-              
+
               <div className="eclipse5">
-              <img className="eclipse5" src="./assets/pic5.jpg"></img>
+                <img className="eclipse5" src="./assets/pic5.jpg"></img>
               </div>
             </div>
             <div className="rating">
@@ -97,8 +97,8 @@ export default function HomePage() {
         </div>
       </div>
       <div>
-        <Karousel/>
-        <Footer/>
+        <Karousel />
+        <Footer />
       </div>
     </>
   );
