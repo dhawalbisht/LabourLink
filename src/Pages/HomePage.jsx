@@ -32,7 +32,7 @@ export default function HomePage() {
           </p>
         </div>
         <div>
-          <button className="button-1 text-danger">Register for Work!
+          <button className="button-1">Register for Work!
             {/* <Link src="LoginPage" className="register">
               
             </Link> */}
@@ -97,7 +97,9 @@ export default function HomePage() {
         </div>
       </div>
       <div>
+        <br /><br /><br /><br /><br />
         <Karousel />
+        <br /><br /><br /><br /><br />
         <Footer />
       </div>
     </>

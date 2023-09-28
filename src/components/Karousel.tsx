@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import '../style/Karousel.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ClassNames } from '@emotion/react';
+import { Height } from '@mui/icons-material';
 const images = [
     "./assets/1.png",
     "./assets/2.png",
@@ -12,7 +13,7 @@ const images = [
   ];
 function Karousel() {
   return (
-    <div className='box'>
+    <div style={{paddingTop:100, height:300}} className='box'>
         <Carousel useKeyboardArrows={true}>
             {images.map((URL, index) => (
                  <div className="slide">

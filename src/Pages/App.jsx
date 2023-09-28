@@ -6,6 +6,7 @@ import FindWork from './FindWork'
 
 
 
+
 export default function App() {
     const [isLogin, setIsLogin] = useState(false);
     return (
@@ -14,7 +15,7 @@ export default function App() {
                 <Route path="/" element={<HomePage isLogin={isLogin} setIsLogin={setIsLogin} />} />
                 <Route path="/login" element={<LoginPage isLogin={isLogin} setIsLogin={setIsLogin} />} />
                 <Route path='/findwork' element={<FindWork />}></Route>
-            </Routes>
+            </Routes >
         </>
     )
 }

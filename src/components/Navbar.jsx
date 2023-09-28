@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 // import { Margin } from '@mui/icons-material';
+// import SearchPage from '../Pages/SearchPage';
 
 const linkStyles = {
   textDecoration: 'none',
@@ -145,6 +146,8 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 </Button>
               ))}
             </Box>
+
+
 
             {/* Login button */}
             {!first && <Link to="/login" style={linkStyles}>
