@@ -107,21 +107,25 @@ export default function SignInSide({ isLogin, setIsLogin }) {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               /> */}
+                                <div style={{ width: "100%", marginLeft: "auto" }}>
 
-                                <GoogleOAuthProvider clientId="638206390343-iutkrhrn1naj02aq55i04v5msvv04n3m.apps.googleusercontent.com">
-                                    <GoogleLogin
-                                        onSuccess={credentialResponse => {
-                                            console.log(credentialResponse.credential)
-                                            if (credentialResponse.credential) {
-                                                setIsLogin(true)
-                                                console.log("hello")
-                                            }
-                                        }}
-                                        onError={() => {
-                                            console.log('Login Failed')
-                                        }}
-                                    />
-                                </GoogleOAuthProvider>
+
+                                    <GoogleOAuthProvider clientId="638206390343-iutkrhrn1naj02aq55i04v5msvv04n3m.apps.googleusercontent.com">
+
+                                        <GoogleLogin
+                                            onSuccess={credentialResponse => {
+                                                console.log(credentialResponse.credential)
+                                                if (credentialResponse.credential) {
+                                                    setIsLogin(true)
+                                                    console.log("hello")
+                                                }
+                                            }}
+                                            onError={() => {
+                                                console.log('Login Failed')
+                                            }}
+                                        />
+                                    </GoogleOAuthProvider>
+                                </div>
                                 <br />
                                 <Grid container>
                                     <Grid item xs>

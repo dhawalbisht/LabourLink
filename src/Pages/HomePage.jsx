@@ -6,10 +6,10 @@ import Karousel from '../components/Karousel'
 import Footer from '../Pages/Footer'
 import Write from "../components/Typewrite";
 
-export default function HomePage() {
+export default function HomePage({ isLogin, setIsLogin }) {
   return (
     <>
-      <Navbar />
+      <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />
 
       <div className="block1">
         <div className="row-1 row"></div>

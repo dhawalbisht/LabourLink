@@ -6,11 +6,11 @@
   margin: 0;
 }
 .block1 {
-  background: #FFC815;;
+  background: #e6e6e6;
   height: 10vh;
   width: 100%;
-  animation: fade 5s infinite;
-  animation-direction: alternate;
+  /* animation: fade 5s infinite;
+  animation-direction: alternate; */
 }
 
 .row-2 {

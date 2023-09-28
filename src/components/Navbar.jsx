@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 // import { Margin } from '@mui/icons-material';
 // import SearchPage from '../Pages/SearchPage';
+import FindWork from '../Pages/FindWork';
 
 const linkStyles = {
   textDecoration: 'none',
@@ -43,14 +44,9 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
     setAnchorElUser(null);
   };
 
-  const [first, setfirst] = useState(false)
 
-  useEffect(() => {
-    console.log(first)
-    if (first === false && isLogin === true)
-      setfirst(true)
 
-  }, [isLogin])
+
 
   return (
     <>
@@ -136,25 +132,39 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
+              <Button
+                // key={page}
+                // onClick={() => { console.log('hello world') }}
+                sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
+              >
+                Home
+              </Button>
+              <Button
+                // key={page}
+                // onClick={() => { console.log('hello world') }}
+                sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
+              >
+                Hire
+              </Button>
+              <Link to='/findwork' style={linkStyles}>
                 <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
+                  // onClick={() => { console.log('hello world') }}
                   sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
                 >
-                  {page}
+                  Find Work
                 </Button>
-              ))}
+              </Link>
             </Box>
 
 
 
             {/* Login button */}
-            {!first && <Link to="/login" style={linkStyles}>
+            {!isLogin && <Link to="/login" style={linkStyles}>
               <Button
                 variant="contained"
                 color="primary"
                 sx={{
+                  backgroundColor: 'black',
                   display: 'block',
                   width: '100%',
                   maxWidth: '200px',
