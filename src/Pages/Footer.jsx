@@ -21,20 +21,18 @@ return (
         </div>
         <div className="column2">
             <h4>Support</h4>
-            <div></div>
 			<div>Contact</div>
             <div>E-mail</div>
             <div>Pricing</div>
         </div>
 		<div className="column3">
             <h4>Legal</h4>
-            <div></div>
 			<div>Claims</div>
             <div>Privacy</div>
             <div>Terms</div>
         </div>
         <div className="column4">
-            <img src="./assets/instagram.png" alt="" height='40px' /><img src="./assets/call.png" height='40px' alt="" /><img src="./assets/gmail.png" height='40px' alt="" />
+            <img src="./assets/instagram.png" alt="" height='40px' />⠀<img src="./assets/call.png" height='40px' alt="" />⠀<img src="./assets/gmail.png" height='40px' alt="" />
         </div>
 		<div className="lastBar"><p>@copyright</p></div>
     </div>

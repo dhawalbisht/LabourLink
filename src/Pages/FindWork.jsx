@@ -4,7 +4,7 @@ import '../style/FindWork.css'
 import { Link } from '@mui/material'
 import Write from '../components/Typewrite'
 import styled from "styled-components";
-
+import Footer from './Footer'
 
 const theme = {
     yellow: {
@@ -64,7 +64,7 @@ export default function FindWork() {
                     <div className="apply-as-an">apply as an</div>
                     <div className="button-container">
                         <div className="button-child"></div>
-                        <div className="buttonpos">
+                        <div className="pos1">
                             <a href="/indivisual"><Button style={{ fontFamily: 'Montserrat' }}>Indivisual</Button></a>
                         </div>
                     </div>
@@ -74,14 +74,15 @@ export default function FindWork() {
                     <div className="image"><img height="195rem" width="260rem" src='./assets/agency.png'></img></div>
                     <div className="box"></div>
                     <div className="apply-as-an">apply as an</div>
-                    <div className="button-container">
-                        <div className="button-child"></div>
-                        <div className="buttonpos">
+                    <div className="container">
+                        <div className="containerchild"></div>
+                        <div className="pos2">
                             <a href="/agency"><Button style={{ fontFamily: 'Montserrat' }}>Agency</Button></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

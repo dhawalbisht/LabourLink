@@ -66,12 +66,13 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 display: { xs: 'none', md: 'flex' },
                 fontFamily: 'monospace',
                 fontWeight: 700,
-                letterSpacing: '.3rem',
+                // letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}
             >
-              LL
+              <img src='./assets/ll.png' height='30px' width='30px'></img>
+              <p style={{color:'black'}}>⠀LabourLink</p>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -132,24 +133,26 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              <a href='/' style={{textDecoration:'none'}}>
               <Button
                 // key={page}
                 // onClick={() => { console.log('hello world') }}
-                sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
+                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
               >
                 Home
-              </Button>
+              </Button></a>
+              <a href='/hire' style={{textDecoration:'none'}}>
               <Button
                 // key={page}
                 // onClick={() => { console.log('hello world') }}
-                sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
+                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
               >
                 Hire
-              </Button>
+              </Button></a>
               <Link to='/findwork' style={linkStyles}>
                 <Button
                   // onClick={() => { console.log('hello world') }}
-                  sx={{ my: 2, color: 'white', display: 'block', marginLeft: 10 }}
+                  sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
                 >
                   Find Work
                 </Button>

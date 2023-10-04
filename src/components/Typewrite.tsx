@@ -16,7 +16,7 @@ function Write() {
                         .typeString("Believe and Build the link!")
                         .pauseFor(500)
                         .deleteAll()
-                        .typeString(" Believe and build the link!")
+                        .typeString("Believe and build the link!")
                         .start();
                 }}
             />
