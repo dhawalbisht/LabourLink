@@ -111,6 +111,7 @@ flex-direction: row;
   text-decoration: none;
   text-align: center;
 cursor: pointer;
+
 /* position: relative; */
 
 
@@ -315,5 +316,23 @@ margin-top: -25px;
 font-size: large;
 font-weight: bold;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+::-webkit-scrollbar{
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 1rem;
+  border: .2rem solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: orange;
 }

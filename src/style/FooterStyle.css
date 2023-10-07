@@ -4,7 +4,9 @@
 	justify-content: space-around;
 	background: #000;
 	color: #fefefe;
-	height: 400px;
+	height: 450px;
+	background-repeat: no-repeat;
+	margin-bottom: -10px;
 
 }
 .searchbar{
@@ -25,7 +27,7 @@ font-weight: 800px;
 }
 
 .chatbot{
-	margin-top: 100px;
+	margin-top: 10px;
 	margin-right: none;
 	display: flex;
 	flex-direction: column;
@@ -41,7 +43,7 @@ font-weight: 800px;
 
 }
 .column1{
-	margin-top: 50px;
+	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -52,12 +54,14 @@ font-weight: 800px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	margin-top: 0px;
 }
 .column3{
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	margin-top: 0px;
 }
 
 .lastBar{

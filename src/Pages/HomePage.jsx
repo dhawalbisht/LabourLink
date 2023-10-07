@@ -61,7 +61,7 @@ export default function HomePage({ isLogin, setIsLogin }) {
           repeat
         ></video>
         <div className="textblock">
-          <h2 className="text-3"><p><span style={{backgroundColor:'#32173B'}}>⠀OUR AIM⠀</span></p></h2>
+          <h2 className="text-3"><p><span style={{ backgroundColor: '#32173B' }}>⠀OUR AIM⠀</span></p></h2>
           <p className="text-4">
             The website aims to bridge the gap between job seekers and employers
             by providing a centralized platform where they can connect and
@@ -92,6 +92,7 @@ export default function HomePage({ isLogin, setIsLogin }) {
               <img className="eclipse5" src="./assets/pic5.jpg"></img>
             </div>
           </div>
+
           <div className="rating">
             <img src="./assets/rating.png"></img>
             <img src="./assets/rating.png"></img>
