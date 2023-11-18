@@ -1,219 +1,124 @@
-import React, { useEffect, useState } from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { Link } from 'react-router-dom';
-// import { Margin } from '@mui/icons-material';
-// import SearchPage from '../Pages/SearchPage';
-import FindWork from '../Pages/FindWork';
+import React from "react";
+import Navbar from "../components/Navbar";
+import { Link } from "@mui/material";
+import Write from "../components/Typewrite";
+import "../style/FindWorkIndivisual.css";
+import styled from "styled-components";
+import Footer from '../Pages/Footer'
+import { Upload } from "@mui/icons-material";
 
-const linkStyles = {
-  textDecoration: 'none',
-  color: 'inherit',
+const theme = {
+  yellow: {
+    default: "#ffc815",
+    hover: "#eab60c",
+  },
 };
 
-const pages = ['Home', 'Hire', 'Find Work'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const Button = styled.button`
+  background-color: ${(props) => theme[props.theme].default};
+  color: black;
+  padding: 5px 15px;
+  width:16.3rem;
+  height: 3.1rem;
+  border: none;
+  border-radius: 0.5rem;;
+  outline: 0;
+  font-weight;: bold
+  font-size: 1rem;
 
-function ResponsiveAppBar({ isLogin, setIsLogin }) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  text-transform: uppercase;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+  &:hover {
+    background-color: ${(props) => theme[props.theme].hover};
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+`;
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+Button.defaultProps = {
+  theme: "yellow",
+};
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+const ButtonToggle = styled(Button)`
+  opacity: 0.7;
+  ${({ active }) =>
+    active &&
+    `
+    opacity: 1; 
+  `}
+`;
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-
-
-
-
+export default function Indivisual() {
   return (
     <>
-
-      <AppBar position="static" sx={{ backgroundColor: 'orange' }}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                // letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              <img src='./assets/ll.png' height='30px' width='30px'></img>
-              <p style={{color:'black'}}>⠀LabourLink</p>
-            </Typography>
-
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography>
-
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <a href='/' style={{textDecoration:'none'}}>
-              <Button
-                // key={page}
-                // onClick={() => { console.log('hello world') }}
-                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
-              >
-                Home
-              </Button></a>
-              <a href='/hire' style={{textDecoration:'none'}}>
-              <Button
-                // key={page}
-                // onClick={() => { console.log('hello world') }}
-                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
-              >
-                Hire
-              </Button></a>
-              <Link to='/findwork' style={linkStyles}>
-                <Button
-                  // onClick={() => { console.log('hello world') }}
-                  sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
-                >
-                  Find Work
-                </Button>
-              </Link>
-            </Box>
+      <Navbar />
+      <div className="back">
+        <b className="pageheading">
+          Please fill out the following details for registration.
+        </b>
+        <div className="columns">
+          <div className="column11">
+            <div className="inputframe">
+              <div className="inputlabels">Full Name</div>
+              <input type="text" className="input-field" name="name" placeholder='Enter Name' />
+            </div>
+            <div className="inputframe">
+              <div className="inputlabels">Email ID</div>
+              <input type="email" className="input-field" name="email" placeholder='Email' />
+            </div>
+            <div className="inputframe">
+              <div className="inputlabels">Choose a username</div>
+              <input type="text" className="input-field" name="username" placeholder='Username' />
+            </div>
+            <div className="inputframe">
+              <div className="inputlabels">Choose a password</div>
+              <input type="password" className="input-field" name="password" placeholder='Password' />
+              <div className="passwordlength">
+                Choose a password between 4 and 12 characters
+              </div>
+            </div>
+            <div className="inputframe">
+              <div className="input-text-label">Confirm password</div>
+              <input type="password" className="input-field" name="confirmpassword" placeholder='Re-enter password' />
+            </div>
+          </div>
+          <div className="column22">
+            <div className="inputframe">
+              <div className="inputlabels">Phone no.</div>
+              <input type="tel" className="input-field" name="phone" placeholder='Enter phone no.' />
+            </div>
+            <div className="inputframe">
+              <div className="inputlabels">Aadhaar Card Number</div>
+              <input type="tel" className="input-field" name="aadhaar" placeholder='Aadhaar' />
+            </div>
+            <div className="inputframe">
+              <div className="inputlabels">Location</div>
+              <input type="text" className="input-field" name="location" placeholder='Location' />
+            </div>
+            <br />
+            <div className="inputframe">
+              <div className="button--container">
+                <div className="button--child"></div>
+                <a href="/">
+                  <Button style={{ fontFamily: "Montserrat" }}>
+                    Register
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bottom">
 
 
+      </div>
 
-            {/* Login button */}
-            {!isLogin && <Link to="/login" style={linkStyles}>
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{
-                  backgroundColor: 'black',
-                  display: 'block',
-                  width: '100%',
-                  maxWidth: '200px',
-                  margin: '0 auto',
-                }}
-              >
-                Sign In
-              </Button>
-            </Link>}
-
-            {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-            <Avatar alt="D" src="/static/images/avatar" />
-            </IconButton>
-            </Tooltip>
-            <Menu
-            sx={{ mt: '45px' }}
-            id="menu-appbar"
-            anchorEl={anchorElUser}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorElUser)}
-            onClose={handleCloseUserMenu}
-            >
-            {settings.map((setting) => (
-              <MenuItem key={setting} onClick={handleCloseUserMenu}>
-              <Typography textAlign="center">{setting}</Typography>
-              </MenuItem>
-              ))}
-              </Menu>
-            </Box> */}
-          </Toolbar>
-        </Container>
-      </AppBar>
     </>
-
   );
 }
-
-export default ResponsiveAppBar;
-
