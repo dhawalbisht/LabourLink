@@ -88,13 +88,13 @@ export default function Indivisual() {
           </div>
           <div className="column22">
             <div className="inputframe">
-            <div className="inputlabels">Phone no.</div>
-            <input type="tel" className="input-field" name="phone" placeholder='Enter phone no.' />
+              <div className="inputlabels">Phone no.</div>
+              <input type="tel" className="input-field" name="phone" placeholder='Enter phone no.' />
             </div>
             <div className="inputframe">
               <div className="inputlabels">Aadhaar Card Number</div>
               <input type="tel" className="input-field" name="aadhaar" placeholder='Aadhaar' />
-            </div>            
+            </div>
             <div className="inputframe">
               <div className="inputlabels">Location</div>
               <input type="text" className="input-field" name="location" placeholder='Location' />
@@ -102,20 +102,20 @@ export default function Indivisual() {
             <div className="inputframe">
               <div className="button--container">
                 <div className="button--child"></div>
-                  <a href="/">
-                    <Button style={{ fontFamily: "Montserrat" }}>
-                      Register
-                    </Button>
-                  </a>
+                <a href="/">
+                  <Button style={{ fontFamily: "Montserrat" }}>
+                    Register
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="bottom">
-      
+
       </div>
-        
+
     </>
   );
 }
