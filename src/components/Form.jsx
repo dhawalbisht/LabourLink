@@ -110,6 +110,7 @@ export default function SignInSide({ isLogin, setIsLogin }) {
                /> */}
                                 <div style={{ width: "100%", marginLeft: "auto" }}>
                                     <br />
+
                                     <center>
 
                                         <GoogleOAuthProvider clientId="26528891117-68otlvtsc8ghbuk45k839ch0m2umth02.apps.googleusercontent.com">
@@ -129,7 +130,7 @@ export default function SignInSide({ isLogin, setIsLogin }) {
                                         </GoogleOAuthProvider>
                                     </center>
                                 </div>
-                                <br />
+                                <br /><br />
                                 <Grid container>
                                     <Grid item xs>
                                         <Link href="#" variant="body2">
@@ -142,7 +143,7 @@ export default function SignInSide({ isLogin, setIsLogin }) {
                                         </Link>
                                     </Grid>
                                 </Grid>
-                                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                                <br /><br /><br /><br /><br /><br /><br /><br /><br />
                                 <Copyright sx={{ mt: 5 }} />
                             </Box>
                         </Box>

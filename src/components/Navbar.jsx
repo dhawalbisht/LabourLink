@@ -44,9 +44,14 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
     setAnchorElUser(null);
   };
 
+
+
+
+
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: 'orange' }}>
+
+      <AppBar position="static" sx={{ backgroundColor: '#f8be00' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -67,7 +72,7 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
               }}
             >
               <img src='./assets/ll.png' height='30px' width='30px'></img>
-              <p style={{ color: 'black' }}>⠀LabourLink</p>
+              <p style={{color:'black'}}>⠀LabourLink</p>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -77,7 +82,7 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="black"
               >
                 <MenuIcon />
               </IconButton>
@@ -106,10 +111,10 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+           
 
             <Typography
-              variant="h5"
+              variant="h6"
               noWrap
               component="a"
               href="/"
@@ -117,37 +122,36 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
+                fontFamily: 'Montserrat',
                 fontWeight: 700,
-                letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}
             >
-              LOGO
+              <p style={{color:'black'}}>⠀LabourLink</p>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <a href='/' style={{ textDecoration: 'none' }}>
-                <Button
-                  // key={page}
-                  // onClick={() => { console.log('hello world') }}
-                  sx={{ my: 2, color: 'black', fontWeight: '600', display: 'block', marginLeft: 10 }}
-                >
-                  Home
-                </Button></a>
-              <a href='/hire' style={{ textDecoration: 'none' }}>
-                <Button
-                  // key={page}
-                  // onClick={() => { console.log('hello world') }}
-                  sx={{ my: 2, color: 'black', fontWeight: '600', display: 'block', marginLeft: 10 }}
-                >
-                  Hire
-                </Button></a>
+              <a href='/' style={{textDecoration:'none'}}>
+              <Button
+                // key={page}
+                // onClick={() => { console.log('hello world') }}
+                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
+              >
+                Home
+              </Button></a>
+              <a href='/hire' style={{textDecoration:'none'}}>
+              <Button
+                // key={page}
+                // onClick={() => { console.log('hello world') }}
+                sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
+              >
+                Hire
+              </Button></a>
               <Link to='/findwork' style={linkStyles}>
                 <Button
                   // onClick={() => { console.log('hello world') }}
-                  sx={{ my: 2, color: 'black', fontWeight: '600', display: 'block', marginLeft: 10 }}
+                  sx={{ my: 2, color: 'black', fontWeight:'600', display: 'block', marginLeft: 10 }}
                 >
                   Find Work
                 </Button>
@@ -174,34 +178,34 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
             </Link>}
 
             {/* <Box sx={{ flexGrow: 0 }}>
-      <Tooltip title="Open settings">
-      <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-      <Avatar alt="D" src="/static/images/avatar" />
-      </IconButton>
-      </Tooltip>
-      <Menu
-      sx={{ mt: '45px' }}
-      id="menu-appbar"
-      anchorEl={anchorElUser}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={Boolean(anchorElUser)}
-      onClose={handleCloseUserMenu}
-      >
-      {settings.map((setting) => (
-        <MenuItem key={setting} onClick={handleCloseUserMenu}>
-        <Typography textAlign="center">{setting}</Typography>
-        </MenuItem>
-        ))}
-        </Menu>
-      </Box> */}
+            <Tooltip title="Open settings">
+            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+            <Avatar alt="D" src="/static/images/avatar" />
+            </IconButton>
+            </Tooltip>
+            <Menu
+            sx={{ mt: '45px' }}
+            id="menu-appbar"
+            anchorEl={anchorElUser}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            open={Boolean(anchorElUser)}
+            onClose={handleCloseUserMenu}
+            >
+            {settings.map((setting) => (
+              <MenuItem key={setting} onClick={handleCloseUserMenu}>
+              <Typography textAlign="center">{setting}</Typography>
+              </MenuItem>
+              ))}
+              </Menu>
+            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>
@@ -211,3 +215,4 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
 }
 
 export default ResponsiveAppBar;
+

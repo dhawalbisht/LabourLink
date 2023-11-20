@@ -31,9 +31,17 @@
   }
   .inputframe {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.2rem;
   }
   
+  .column--3 {
+    position: absolute;
+    top: 8rem;
+    left: 64rem;
+    width: 35rem;
+    height: 35rem;
+    
+  }
   .column--2 {
     position: absolute;
     top: 2.5rem;
@@ -43,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   .passwordlength {
     align-self: stretch;
@@ -59,20 +67,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
   .columns {
     position: absolute;
     top: 5rem;
-    left: 21.81rem;
+    left: 5rem;
     width: 46.38rem;
-    height: 40.69rem;
+    height: 44rem;
     overflow: hidden;
   }
   .pageheading {
     position: absolute;
     top: 3rem;
-    left: 24.25rem;
+    left: 7.25rem;
     font-size: 1.5rem;
     display: inline-block;
     font-family: Montserrat;
@@ -84,12 +92,13 @@
     position: relative;
     background-color: #e6e6e6;
     width: 100%;
-    height: 50rem;
+    height: 48rem;
     overflow: hidden;
     text-align: left;
     font-size: 0.75rem;
     color: #666;
     font-family: "Montserrat";
+    
   }
   .button---child {
     position: absolute;
@@ -99,8 +108,29 @@
   
   .button---container {
     position: absolute;
-    top: 21.7rem;
+    top: 28.5rem;
     left: 0rem;
     font-size: 2rem;
   }
   
+  .error-message{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: red;
+    margin-top: 0.2rem;
+  }
+
+  .particles{
+ 
+    position: absolute;
+  }
+  .particlecontainer{
+    position: absolute;
+  }
+  .particlebg{
+    margin-left: -8rem;
+    margin-top: -7rem;
+  }
+  h3 {
+    color:  rgb(0, 0, 0);
+  }
